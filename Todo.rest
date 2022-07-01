@@ -1,0 +1,27 @@
+@url = "http://localhost:3200/" 
+
+GET http://localhost:3200/Todo HTTP/1.1
+
+###
+GET http://localhost:3200/Todo/ HTTP/1.1
+
+###
+POST http://localhost:3200/Todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Coding in the night",
+    "description": "Staying on the van to code"
+}
+
+###
+PUT http://localhost:3200/Todo/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Coding in the van",
+    "description": "Staying on the van to code"
+}
+
+###
+DELETE http://localhost:3200/Todo/fec8ab79-d0dc-425d-9548-d1959d9cb474 HTTP/1.1
